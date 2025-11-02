@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Informasi Bahan Ajar - SITTA</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">SITTA</a>
+      <nav class="navbar">
+        <ul class="topnav">
+          <li><a href="dashboard.html">Home</a></li>
+          <li><a class="active" href="stok.html">Informasi Bahan Ajar</a></li>
+          <li>
+            <a href="tracking.html">Tracking Pengiriman</a>
+          </li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Laporan</a>
+            <div class="dropdown-content">
+              <a href="#">Monitoring Progress DO Bahan Ajar</a>
+              <a href="#">Rekap Bahan Ajar</a>
+            </div>
+          </li>
+          <li><a href="#">Histori Pengiriman Bahan Ajar</a></li>
+          <li class="right"><a href="#" id="logoutBtn">Keluar</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="container-stok">
+        <h1>Informasi Bahan Ajar</h1>
+      </div>
+      <div class="table-stok">
+        <table id="tabelBahanAjar">
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>Cover</th>
+              <th>Kode Lokasi</th>
+              <th>Kode Barang</th>
+              <th>Nama Barang</th>
+              <th>Jenis Barang</th>
+              <th>Edisi</th>
+              <th>Stok</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+    <footer class="footer">&copy;Trisha Suci R | NIM</footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/data.js"></script>
+    <script
+      src="https://kit.fontawesome.com/3a4b68c839.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

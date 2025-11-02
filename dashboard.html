@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - SITTA</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">SITTA</a>
+      <nav class="navbar">
+        <ul class="topnav">
+          <li><a class="active" href="#home">Home</a></li>
+          <li><a href="stok.html">Informasi Bahan Ajar</a></li>
+          <li><a href="tracking.html">Tracking Pengiriman</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Laporan</a>
+            <div class="dropdown-content">
+              <a href="#">Monitoring Progress DO Bahan Ajar</a>
+              <a href="#">Rekap Bahan Ajar</a>
+            </div>
+          </li>
+          <li><a href="#">Histori Pengiriman Bahan Ajar</a></li>
+
+          <li class="right"><a href="#" id="logoutBtn">Keluar</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="box-greeting">
+        <div class="greeting" id="greeting"></div>
+        <p class="pgreeting">
+          Selamat datang di sistem pemesanan dan distribusi bahan ajar
+          Universitas Terbuka.
+        </p>
+      </div>
+    </div>
+    <footer class="footer">&copy;Trisha Suci R | NIM</footer>
+    <script src="js/script.js"></script>
+    <script src="js/data.js"></script>
+    <script
+      src="https://kit.fontawesome.com/3a4b68c839.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

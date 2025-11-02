@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - SITTA</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="containerLgn">
+      <div class="form-box">
+        <h1 class="title-form">Selamat datang kembali</h1>
+        <form id="formLogin">
+          <div class="input-group">
+            <div class="input-field">
+              <i class="fa-solid fa-envelope"></i>
+              <input
+                type="email"
+                name="email"
+                id="emailLgn"
+                placeholder="Email"
+                required
+              />
+            </div>
+            <div class="input-field">
+              <i class="fa-solid fa-lock"></i>
+              <input
+                type="password"
+                name="password"
+                id="passwordLgn"
+                placeholder="Password"
+                required
+              />
+            </div>
+          </div>
+          <div class="btn-field">
+            <button type="submit">Masuk</button>
+          </div>
+          <div class="btn-footer">
+            <button class="loginbtn" id="lupaPass">Lupa Password?</button>
+            <button class="loginbtn" id="regisBtn">Belum Punya Akun?</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Modal Lupa Password -->
+    <div class="modallgn" id="lupaPassm">
+      <!-- modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Lupa Password</h2>
+        <p>Silahkan hubungi admin SITTA untuk reset password Anda!</p>
+      </div>
+    </div>
+
+    <!-- Modal Buat akun baru -->
+    <div class="modallgn" id="buatAkun">
+      <!-- modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Daftar akun baru</h2>
+        <p>
+          Mohon maaf, fitur pendaftaran akun baru saat ini belum tersedia,
+          hubungi Admin.
+        </p>
+      </div>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/login.js"></script>
+    <script
+      src="https://kit.fontawesome.com/3a4b68c839.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

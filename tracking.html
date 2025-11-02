@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tracking Pengiriman - SITTA</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">SITTA</a>
+      <nav class="navbar">
+        <ul class="topnav">
+          <li><a href="dashboard.html">Home</a></li>
+          <li><a href="stok.html">Informasi Bahan Ajar</a></li>
+          <li>
+            <a class="active" href="tracking.html">Tracking Pengiriman</a>
+          </li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Laporan</a>
+            <div class="dropdown-content">
+              <a href="#">Monitoring Progress DO Bahan Ajar</a>
+              <a href="#">Rekap Bahan Ajar</a>
+            </div>
+          </li>
+          <li><a href="#">Histori Pengiriman Bahan Ajar</a></li>
+          <li class="right"><a href="#" id="logoutBtn">Keluar</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="container-tracking">
+        <h1>Tracking Pengiriman</h1>
+        <div class="search-section">
+          <input
+            type="text"
+            id="nomorDO"
+            placeholder="Masukan Nomor DO (contoh :2023005678)"
+          />
+          <button class="searchbtn" id="searchBtn">Cari</button>
+        </div>
+        <div class="result" id="result"></div>
+      </div>
+    </div>
+    <!-- Modal untuk data tidak ditemukan -->
+    <div class="modaldata" id="modalData">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Data tidak ditemukan</h2>
+        <p>
+          Nomor Do yang Anda cari tidak ada dalam sistem, Silahkan periksa
+          kembali nomornya.
+        </p>
+      </div>
+    </div>
+    <footer class="footer">&copy;Trisha Suci R | NIM</footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/data.js"></script>
+    <script
+      src="https://kit.fontawesome.com/3a4b68c839.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
